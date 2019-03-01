@@ -1,5 +1,4 @@
 <br/>
-<br/>
 <p align="center">
 <img width="200" height="80" src="https://www.86percent.co/images/eightysix_long.svg"><br/><br/>
 <font size="6">86% SDK - API reference for iOS</font>
