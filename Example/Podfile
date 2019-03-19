@@ -1,7 +1,0 @@
-
-target 'Test86' do
-  
-  use_frameworks!
-  pod 'EightySixPercent', :podspec => '/Users/nicolas/Development/GIT/EightySixPercent_iOS_SDKBuilding/EightySixPercent.podspec'
-
-end
