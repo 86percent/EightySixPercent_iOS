@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "EightySixPercent"
-    s.version      = "1.0.0"
+    s.version      = "1.0.1"
     s.summary      = "86% SDK."
     s.description  = <<-DESC
     The EightySixPercent SDK
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     s.author       = { "Lunabot SAS" => "lunabot@86percent.co" }
     s.ios.deployment_target = '10.0'
     s.ios.vendored_frameworks = 'EightySixPercent.framework'
-    s.source        = { :http => "https://github.com/86percent/EightySixPercent_iOS/raw/master/EightySixPercent-1.0.0.zip" }
+    s.source        = { :http => "https://github.com/86percent/EightySixPercent_iOS/raw/master/EightySixPercent-1.0.1.zip" }
     s.exclude_files = "Classes/Exclude"
     s.swift_version = "4.2"
 
