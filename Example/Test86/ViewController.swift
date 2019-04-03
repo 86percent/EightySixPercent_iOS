@@ -76,8 +76,15 @@ extension ViewController : EPChatMessageViewControllerDelegate {
     }
     
     func epChatMessageViewControllerBotDidFinish(controller: EPChatMessageViewController, context: [EPContextObject]) {
+    
+        
         //is called when the bot is finished. This is the place to save your information in your model..
-        log(message: "\(context)")
+        let contextDescription = context.map{ "\($0.key) = \(String(describing: $0.value))"}.joined(separator: "\n\n")
+        log(message: "\(contextDescription)")
+        let alertViewController = UIAlertController(title:nil, message: contextDescription, preferredStyle: .alert)
+        alertViewController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        controller.present(alertViewController, animated: true)
+        
     }
     
     func epChatMessageViewControllerUserDidInput(controller: EPChatMessageViewController, content: EPMessageContent, context: [EPContextObject]) {
