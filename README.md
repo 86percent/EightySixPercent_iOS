@@ -9,7 +9,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 </p>
 <p>
    86% is a platform that lets you integrate seamlessly conversational interfaces within your native applications, iOS and Android.   
-   This API reference provides details on all public methods available through the 86% SDK.
+   This example project shows you how to implement the SDK within any App.
 </p>
 <p>
    The documentation can be found <a href="https://86percent.github.io/docs/" target="_blank">here</a>.   
