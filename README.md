@@ -5,9 +5,9 @@
    <img src="https://img.shields.io/badge/Platform-iOS_10+-brightgreen.svg?style=flat"/>
    <img src="https://img.shields.io/badge/Supported_Xcode-10.2-brightgreen.svg?style=flat"/>
    <img src="https://img.shields.io/badge/Language-Swift_4.2-brightgreen.svg?style=flat"/><br/>
-    
-   <font size="6">86% SDK - API reference for iOS</font>
-</p>    
+</p>   
+
+# 86% SDK - API reference for iOS   
 <p>
    86% is a platform that lets you integrate seamlessly conversational interfaces within your native applications, iOS and Android.   
    This example project shows you how to implement the SDK within any App.
@@ -16,7 +16,7 @@
    The documentation can be found <a href="https://86percent.github.io/docs/" target="_blank">here</a>.   
 </p>
 
-## Example
+## How to install
 To run the example project, clone the repo, and run `pod install` from the Example directory first.   
    
   
