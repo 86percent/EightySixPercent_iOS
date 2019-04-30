@@ -1,0 +1,93 @@
+PODS:
+  - AFDateHelper (4.2.7)
+  - Alamofire (4.8.2)
+  - BABFrameObservingInputAccessoryView (0.2.4)
+  - Bolts-Swift (1.4.0)
+  - CocoaAsyncSocket (7.6.3)
+  - EightySixPercent (1.0.3):
+    - AFDateHelper
+    - BABFrameObservingInputAccessoryView
+    - Bolts-Swift
+    - Hue
+    - JustLog
+    - LGButton
+    - lottie-ios
+    - Moya
+    - Nuke
+    - PKHUD
+    - Pulley
+    - Realm
+    - RealmSwift
+    - Toucan
+  - Hue (4.0.0)
+  - JustLog (2.6.0):
+    - CocoaAsyncSocket (~> 7.6.3)
+    - SwiftyBeaver (~> 1.7.0)
+  - LGButton (1.1.6)
+  - lottie-ios (3.0.4)
+  - Moya (13.0.0):
+    - Moya/Core (= 13.0.0)
+  - Moya/Core (13.0.0):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Nuke (7.6.2)
+  - PKHUD (5.2.1)
+  - Pulley (2.7.0)
+  - Realm (3.14.2):
+    - Realm/Headers (= 3.14.2)
+  - Realm/Headers (3.14.2)
+  - RealmSwift (3.14.2):
+    - Realm (= 3.14.2)
+  - Result (4.1.0)
+  - SwiftyBeaver (1.7.0)
+  - Toucan (1.1.0)
+
+DEPENDENCIES:
+  - EightySixPercent
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFDateHelper
+    - Alamofire
+    - BABFrameObservingInputAccessoryView
+    - Bolts-Swift
+    - CocoaAsyncSocket
+    - EightySixPercent
+    - Hue
+    - JustLog
+    - LGButton
+    - lottie-ios
+    - Moya
+    - Nuke
+    - PKHUD
+    - Pulley
+    - Realm
+    - RealmSwift
+    - Result
+    - SwiftyBeaver
+    - Toucan
+
+SPEC CHECKSUMS:
+  AFDateHelper: 4ad66fb19503041fbba8a3018cb7ef9c71b2ff88
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  BABFrameObservingInputAccessoryView: 0f5fa4d3bcd5dd7110c5e2c182b8b678c847cae6
+  Bolts-Swift: 650d72e8017721b1a6bbe43d542c4578f8e5ba6f
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  EightySixPercent: c18022fb776ac60a5707abcdf9bf439a7a087bf0
+  Hue: afe18b4e819e2848e7d2d5b4b33f4d3f88dd921b
+  JustLog: 192079e8550c1a241ece39c6ce30fc90cd664999
+  LGButton: 9f0a7f9d3030e3f504108342f6b66d64a429371b
+  lottie-ios: 55a2de40418f8de2b155efaba4d4d1a025a5c570
+  Moya: 161263550064ff8a4948e8ff63137fd72a876292
+  Nuke: 392eff7cb037adbec6699febe9237849ac5dcc47
+  PKHUD: 4e6162c4c39ac367c6934e9855c6b4762ee16256
+  Pulley: 028ddcc7d2dcbc078d71b61b7eee8e786d72c14a
+  Realm: 179c6706e3a49dbfe112e572fd3c03d3169bea35
+  RealmSwift: 1797f272fb51c555b764fada32e82159a2c65247
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SwiftyBeaver: 4cc0080d2e23f980652e28978db11a5c9da39165
+  Toucan: 8f228fabb21521b9658692df9325fe76e71d74b2
+
+PODFILE CHECKSUM: 98564f7cfa03826da5029768406f906c32495f33
+
+COCOAPODS: 1.6.1

@@ -223,7 +223,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Test86/Pods-Test86-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Test86/Pods-Test86-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFDateHelper/AFDateHelper.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BABFrameObservingInputAccessoryView/BABFrameObservingInputAccessoryView.framework",
@@ -270,7 +270,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test86/Pods-Test86-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test86/Pods-Test86-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4B88EF8669E610838D7CE880 /* [CP] Check Pods Manifest.lock */ = {

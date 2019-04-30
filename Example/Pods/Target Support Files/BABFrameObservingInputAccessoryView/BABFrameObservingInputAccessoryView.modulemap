@@ -1,0 +1,6 @@
+framework module BABFrameObservingInputAccessoryView {
+  umbrella header "BABFrameObservingInputAccessoryView-umbrella.h"
+
+  export *
+  module * { export * }
+}
