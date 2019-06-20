@@ -52,6 +52,9 @@ class ViewController: UITableViewController {
 // this is optionnal but may be used for customization purpose
 extension ViewController : EPChatMessageViewControllerDelegate {
 
+    func epChatMessageViewControllerCustomInputValidator(controller: EPChatMessageViewController, contextKey: String) -> EPInputValidator? {
+        return nil
+    }
     
     func epChatMessageViewControllerCustomInitialization(controller: EPChatMessageViewController) {
         //this code is called in the viewDidLoad of the ChatMessageViewController
