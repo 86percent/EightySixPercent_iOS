@@ -7,18 +7,18 @@
 
 import Foundation
 
-/// An Objective-C compatible wrapper around Lottie's AnimationKeypath
 @objc
+/// An Objective-C compatible wrapper around Lottie's AnimationKeypath
 public final class CompatibleAnimationKeypath: NSObject {
 
-  /// Creates a keypath from a dot separated string. The string is separated by "."
   @objc
+  /// Creates a keypath from a dot separated string. The string is separated by "."
   public init(keypath: String) {
     animationKeypath = AnimationKeypath(keypath: keypath)
   }
 
-  /// Creates a keypath from a list of strings.
   @objc
+  /// Creates a keypath from a list of strings.
   public init(keys: [String]) {
     animationKeypath = AnimationKeypath(keys: keys)
   }

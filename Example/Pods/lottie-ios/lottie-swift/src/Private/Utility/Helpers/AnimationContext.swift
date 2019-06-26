@@ -28,12 +28,6 @@ struct AnimationContext {
 
 }
 
-enum AnimationContextState {
-  case playing
-  case cancelled
-  case complete
-}
-
 class AnimationCompletionDelegate: NSObject, CAAnimationDelegate {
   
   init(completionBlock: LottieCompletionBlock?) {
@@ -44,13 +38,10 @@ class AnimationCompletionDelegate: NSObject, CAAnimationDelegate {
   var animationLayer: AnimationContainer?
   var animationKey: String?
   var ignoreDelegate: Bool = false
-  var animationState: AnimationContextState = .playing
-  
   let completionBlock: LottieCompletionBlock?
   
   public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
     guard ignoreDelegate == false else { return }
-    animationState = flag ? .complete : .cancelled
     if let animationLayer = animationLayer, let key = animationKey {
       animationLayer.removeAnimation(forKey: key)
       if flag {

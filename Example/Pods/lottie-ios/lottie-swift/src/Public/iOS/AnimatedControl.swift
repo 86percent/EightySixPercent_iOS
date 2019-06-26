@@ -45,11 +45,6 @@ open class AnimatedControl: UIControl {
     stateMap[forState.rawValue] = named
     updateForState()
   }
-
-  /// Sets a ValueProvider for the specified keypath
-  public func setValueProvider(_ valueProvider: AnyValueProvider, keypath: AnimationKeypath) {
-    animationView.setValueProvider(valueProvider, keypath: keypath)
-  }
   
   // MARK: Initializers
   

@@ -63,7 +63,7 @@ class TextCompositionLayer: CompositionLayer {
     let fillColor = rootNode?.textOutputNode.fillColor ?? text.fillColorData.cgColorValue
     let strokeColor = rootNode?.textOutputNode.strokeColor ?? text.strokeColorData?.cgColorValue
     let strokeWidth = rootNode?.textOutputNode.strokeWidth ?? CGFloat(text.strokeWidth ?? 0)
-    let tracking = (CGFloat(text.fontSize) * (rootNode?.textOutputNode.tracking ?? CGFloat(text.tracking))) / 1000.0
+    let tracking = rootNode?.textOutputNode.tracking ?? CGFloat(text.tracking)
     // TODO LINE HEIGHT
     
     let matrix = rootNode?.textOutputNode.xform ?? CATransform3DIdentity

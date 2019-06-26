@@ -108,13 +108,10 @@ class CompositionLayer: CALayer, KeypathSearchable {
   
   final func displayWithFrame(frame: CGFloat, forceUpdates: Bool) {
     transformNode.updateTree(frame, forceUpdates: forceUpdates)
-    let layerVisible = frame.isInRangeOrEqual(inFrame, outFrame)
-    /// Only update contents if current time is within the layers time bounds.
-    if layerVisible {
-      displayContentsWithFrame(frame: frame, forceUpdates: forceUpdates)
-      maskLayer?.updateWithFrame(frame: frame, forceUpdates: forceUpdates)
-    }
+    displayContentsWithFrame(frame: frame, forceUpdates: forceUpdates)
+    maskLayer?.updateWithFrame(frame: frame, forceUpdates: forceUpdates)
     contentsLayer.transform = transformNode.globalTransform
+    let layerVisible = frame.isInRangeOrEqual(inFrame, outFrame)
     contentsLayer.opacity = transformNode.opacity
     contentsLayer.isHidden = !layerVisible
     layerDelegate?.frameUpdated(frame: frame)

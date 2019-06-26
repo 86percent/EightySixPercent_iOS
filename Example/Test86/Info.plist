@@ -10,11 +10,6 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
@@ -23,6 +18,19 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Nico</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Nico</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Nico</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>ComicBookBoldItalic.otf</string>
@@ -30,14 +38,6 @@
 		<string>ComicBookItalic.otf</string>
 		<string>ComicBook.otf</string>
 	</array>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>NSCameraUsageDescription</key>
-	<string>Nico</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Nico</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Nico</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

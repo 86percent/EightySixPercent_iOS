@@ -5,20 +5,17 @@ PODS:
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
-  - Bolts-Swift (1.4.0)
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
   - CocoaAsyncSocket (7.6.3)
-  - EightySixPercent (1.0.6):
+  - EightySixPercent (1.0.8):
     - AFDateHelper
     - BABFrameObservingInputAccessoryView
     - Bolts
-    - Bolts-Swift
     - Hue
     - JustLog
-    - LGButton
-    - lottie-ios
+    - lottie-ios (= 3.0.3)
     - Moya
     - Nuke
     - PKHUD
@@ -30,8 +27,7 @@ PODS:
   - JustLog (2.6.0):
     - CocoaAsyncSocket (~> 7.6.3)
     - SwiftyBeaver (~> 1.7.0)
-  - LGButton (1.1.6)
-  - lottie-ios (3.1.0)
+  - lottie-ios (3.0.3)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
@@ -58,12 +54,10 @@ SPEC REPOS:
     - Alamofire
     - BABFrameObservingInputAccessoryView
     - Bolts
-    - Bolts-Swift
     - CocoaAsyncSocket
     - EightySixPercent
     - Hue
     - JustLog
-    - LGButton
     - lottie-ios
     - Moya
     - Nuke
@@ -80,13 +74,11 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   BABFrameObservingInputAccessoryView: 0f5fa4d3bcd5dd7110c5e2c182b8b678c847cae6
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  Bolts-Swift: 650d72e8017721b1a6bbe43d542c4578f8e5ba6f
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
-  EightySixPercent: d3c6a6f58705904afd32b33608a67dba7f372fc2
+  EightySixPercent: d6e6d69112b5fbe52924149c29afaf5d006c100a
   Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
   JustLog: 192079e8550c1a241ece39c6ce30fc90cd664999
-  LGButton: 9f0a7f9d3030e3f504108342f6b66d64a429371b
-  lottie-ios: 9467723922dfff46f6d4e3019c32594a62440b7c
+  lottie-ios: 06e0b54aab85ba128e332687d7f4ac4861a7a7ae
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Nuke: 44130e95e09463f8773ae4b96b90de1eba6b3350
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
