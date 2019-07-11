@@ -8,13 +8,11 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
-  - CocoaAsyncSocket (7.6.3)
-  - EightySixPercent (1.0.8):
+  - EightySixPercent (1.0.10):
     - AFDateHelper
     - BABFrameObservingInputAccessoryView
     - Bolts
     - Hue
-    - JustLog
     - lottie-ios (= 3.0.3)
     - Moya
     - Nuke
@@ -24,25 +22,21 @@ PODS:
     - RealmSwift
     - Toucan
   - Hue (5.0.0)
-  - JustLog (2.6.0):
-    - CocoaAsyncSocket (~> 7.6.3)
-    - SwiftyBeaver (~> 1.7.0)
   - lottie-ios (3.0.3)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
-  - Nuke (7.6.3)
+  - Nuke (8.0)
   - PKHUD (5.3.0)
   - Pulley (2.7.0)
-  - Realm (3.16.2):
-    - Realm/Headers (= 3.16.2)
-  - Realm/Headers (3.16.2)
-  - RealmSwift (3.16.2):
-    - Realm (= 3.16.2)
+  - Realm (3.17.1):
+    - Realm/Headers (= 3.17.1)
+  - Realm/Headers (3.17.1)
+  - RealmSwift (3.17.1):
+    - Realm (= 3.17.1)
   - Result (4.1.0)
-  - SwiftyBeaver (1.7.0)
   - Toucan (1.1.0)
 
 DEPENDENCIES:
@@ -54,10 +48,8 @@ SPEC REPOS:
     - Alamofire
     - BABFrameObservingInputAccessoryView
     - Bolts
-    - CocoaAsyncSocket
     - EightySixPercent
     - Hue
-    - JustLog
     - lottie-ios
     - Moya
     - Nuke
@@ -66,7 +58,6 @@ SPEC REPOS:
     - Realm
     - RealmSwift
     - Result
-    - SwiftyBeaver
     - Toucan
 
 SPEC CHECKSUMS:
@@ -74,19 +65,16 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   BABFrameObservingInputAccessoryView: 0f5fa4d3bcd5dd7110c5e2c182b8b678c847cae6
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
-  EightySixPercent: d6e6d69112b5fbe52924149c29afaf5d006c100a
+  EightySixPercent: 2c63c5b7685573428ce106104e950ed956bf5e02
   Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
-  JustLog: 192079e8550c1a241ece39c6ce30fc90cd664999
   lottie-ios: 06e0b54aab85ba128e332687d7f4ac4861a7a7ae
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  Nuke: 44130e95e09463f8773ae4b96b90de1eba6b3350
+  Nuke: 8d90f1dbf88d27a7ba6ff3934de01693812e5adb
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   Pulley: 028ddcc7d2dcbc078d71b61b7eee8e786d72c14a
-  Realm: 0e73b4edeb5b6a90da3d83206883b2e34e00eb38
-  RealmSwift: a81e650171ef0a5f999df1ed8d39ba8d6fce88a4
+  Realm: c204f1a890f07dea43b14132a6aad118c054b8f2
+  RealmSwift: 4d3c9233544b9cd08a8913e0872b9038eb99b054
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
-  SwiftyBeaver: 4cc0080d2e23f980652e28978db11a5c9da39165
   Toucan: 8f228fabb21521b9658692df9325fe76e71d74b2
 
 PODFILE CHECKSUM: 98564f7cfa03826da5029768406f906c32495f33
