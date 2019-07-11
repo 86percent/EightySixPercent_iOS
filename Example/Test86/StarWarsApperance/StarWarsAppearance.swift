@@ -9,14 +9,23 @@
 import UIKit
 import EightySixPercent
 
-
-
 extension  EPAppearance {
 
     class func starwars() -> EPAppearance {
-
         let mainColor = UIColor(hex: "#0275D8")
-        let appearance: EPAppearance = EPAppearance(resourcePrefix: "starwar", mainColor: mainColor, secondaryColor: mainColor)
+        let global = EPAppearance.Bubbles.GlobalAppearance()
+
+        global.tailOffset = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 0)
+
+        let shadow: CGFloat = 2
+        let margin: CGFloat = 8
+
+        global.textContentInset = UIEdgeInsets(top: margin,
+                                               left: margin + shadow,
+                                               bottom: margin + shadow,
+                                               right: margin + shadow)
+
+        let appearance: EPAppearance = EPAppearance(resourcePrefix: "starwar", mainColor: mainColor, secondaryColor: mainColor, generalAppearance: global)
         appearance.bubbleAppearance.incoming.textColor = .black
         appearance.bubbleAppearance.incomingFollowed.textColor = .black
         appearance.customFontName = "ComicBook" //ComicBook-Bold"
@@ -26,46 +35,15 @@ extension  EPAppearance {
         appearance.endBotButtonColor = #colorLiteral(red: 0.9931825995, green: 0.856918633, blue: 0.007652404252, alpha: 1)
         appearance.endBotButtonTextColor = .black
 
-        adjustIncomingBubbleAppearance(appearance.bubbleAppearance.incoming, incoming: true, withTail: true, color: .black)
-        adjustIncomingBubbleAppearance(appearance.bubbleAppearance.incomingFollowed, incoming: true, withTail: false, color: .black)
-        adjustIncomingBubbleAppearance(appearance.bubbleAppearance.outgoing, incoming: false, withTail: true, color: mainColor)
-        adjustIncomingBubbleAppearance(appearance.bubbleAppearance.outgoingFollowed, incoming: false, withTail: false, color: mainColor)
-        
+        appearance.bubbleAppearance.incoming.textColor = .black
+        appearance.bubbleAppearance.incomingLast.textColor = .black
+        appearance.bubbleAppearance.incomingFollowed.textColor = .black
+
+        appearance.bubbleAppearance.outgoing.textColor = mainColor
+        appearance.bubbleAppearance.outgoingFollowed.textColor = mainColor
+        appearance.bubbleAppearance.outgoingLast.textColor = mainColor
+
         return appearance
     }
-    
-    fileprivate class func adjustIncomingBubbleAppearance(_ appearance: EPAppearance.Bubbles.Appearance, incoming: Bool,  withTail: Bool, color: UIColor)  {
-        
-        let shadow: CGFloat = 2
-        let margin: CGFloat = 8
-        let tailSize: CGFloat = 8
-        let defaultAvatarHeight: CGFloat = 40
-        let layoutOption = appearance.cellLayoutOption
-        appearance.avatarPictureRounded = false
-        appearance.textColor = color
-        if incoming {
-            
-            appearance.strongTextColor = #colorLiteral(red: 0.9931825995, green: 0.856918633, blue: 0.007652404252, alpha: 1)
-            layoutOption.avatarPictureSize = withTail ? CGSize(width: defaultAvatarHeight, height: defaultAvatarHeight) :  CGSize.zero
-            layoutOption.avatarVerticalOffset = withTail ? defaultAvatarHeight/2 : 0
-            layoutOption.bubbleImageBorderInset = UIEdgeInsets(top: 0, left: withTail ? 0 : defaultAvatarHeight, bottom: 0, right: 0 )
-            layoutOption.textContentBorderInset = UIEdgeInsets(top: margin + shadow, left: margin + tailSize + shadow, bottom: margin + shadow, right: margin  + shadow)
-        }
-        else {
-            
-            layoutOption.avatarPictureSize = CGSize.zero
-            layoutOption.avatarVerticalOffset = withTail ? 12 : 0
-            layoutOption.bubbleImageBorderInset = UIEdgeInsets.zero
-            layoutOption.textContentBorderInset = UIEdgeInsets(top: margin + shadow, left: margin + shadow, bottom: margin + shadow, right: margin  + shadow + tailSize)
-        }
-        
-    }
- 
-  
-    
-    
-    
+
 }
-
-
-
