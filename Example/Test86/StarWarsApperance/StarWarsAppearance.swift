@@ -25,6 +25,8 @@ extension  EPAppearance {
                                                bottom: margin + shadow,
                                                right: margin + shadow)
 
+
+
         let appearance: EPAppearance = EPAppearance(resourcePrefix: "starwar", mainColor: mainColor, secondaryColor: mainColor, generalAppearance: global)
         appearance.bubbleAppearance.incoming.textColor = .black
         appearance.bubbleAppearance.incomingFollowed.textColor = .black
