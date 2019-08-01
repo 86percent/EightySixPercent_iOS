@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Example Controller-->
+        <scene sceneID="Pep-cC-M1N">
+            <objects>
+                <viewController storyboardIdentifier="CustomExampleController" id="Ba8-Kr-OGT" customClass="CustomExampleController" customModule="Test86" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ctQ-rk-5ME">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrf-Vy-45w">
+                                <rect key="frame" x="135" y="224" width="144" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rr-GT-Qr1">
+                                <rect key="frame" x="178" y="365.5" width="58" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Validate"/>
+                                <connections>
+                                    <action selector="userDidValidate:" destination="Ba8-Kr-OGT" eventType="touchUpInside" id="DpA-Fm-QVY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFC-9p-Y9H">
+                                <rect key="frame" x="192" y="419.5" width="30" height="30"/>
+                                <state key="normal" title="Skip"/>
+                                <connections>
+                                    <action selector="userDidSkip:" destination="Ba8-Kr-OGT" eventType="touchUpInside" id="x0e-c7-0BI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This custom controller will return a simple value to the bot." textAlignment="center" lineBreakMode="clip" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vv-Yv-9Na">
+                                <rect key="frame" x="24" y="261" width="366" height="40.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vrf-Vy-45w" firstAttribute="top" secondItem="FAg-jz-Fgw" secondAttribute="top" constant="180" id="49h-cB-1Oy"/>
+                            <constraint firstItem="8rr-GT-Qr1" firstAttribute="top" secondItem="9vv-Yv-9Na" secondAttribute="bottom" constant="64" id="DRo-A4-nTs"/>
+                            <constraint firstItem="9vv-Yv-9Na" firstAttribute="leading" secondItem="FAg-jz-Fgw" secondAttribute="leading" constant="24" id="IOV-fv-WNI"/>
+                            <constraint firstItem="MFC-9p-Y9H" firstAttribute="centerX" secondItem="ctQ-rk-5ME" secondAttribute="centerX" id="IZF-i9-Ot6"/>
+                            <constraint firstItem="Vrf-Vy-45w" firstAttribute="centerX" secondItem="ctQ-rk-5ME" secondAttribute="centerX" id="JiZ-bP-WwL"/>
+                            <constraint firstItem="MFC-9p-Y9H" firstAttribute="top" secondItem="8rr-GT-Qr1" secondAttribute="bottom" constant="24" id="OZT-5A-8uE"/>
+                            <constraint firstItem="8rr-GT-Qr1" firstAttribute="centerX" secondItem="ctQ-rk-5ME" secondAttribute="centerX" id="hAa-tv-mtf"/>
+                            <constraint firstItem="9vv-Yv-9Na" firstAttribute="top" secondItem="Vrf-Vy-45w" secondAttribute="bottom" constant="16" id="o99-ou-HEg"/>
+                            <constraint firstItem="FAg-jz-Fgw" firstAttribute="trailing" secondItem="9vv-Yv-9Na" secondAttribute="trailing" constant="24" id="yjd-j0-PMz"/>
+                            <constraint firstItem="MFC-9p-Y9H" firstAttribute="centerX" secondItem="8rr-GT-Qr1" secondAttribute="centerX" id="zxj-ff-SbW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FAg-jz-Fgw"/>
+                    </view>
+                    <connections>
+                        <outlet property="skipButton" destination="MFC-9p-Y9H" id="fZV-GY-ASK"/>
+                        <outlet property="validateButton" destination="8rr-GT-Qr1" id="zcY-7y-DtJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8g-5M-a93" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759.4202898550725" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+</document>

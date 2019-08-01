@@ -28,6 +28,10 @@ struct Bots {
     static let starwars = BotExample(name: "Example using theme",
                                      uuid: "A8E89BEB-9687-FC03-5B90-9660CFA408A4",
                                      jsonFile: "starwarsBot.json")
+    
+    static let customController = BotExample(name: "Example with Custom Controller",
+                                   uuid: "03C329CD-29E5-2ABD-7D83-1623C63C7D90",
+                                   jsonFile: "customController.json")
 }
 
 
