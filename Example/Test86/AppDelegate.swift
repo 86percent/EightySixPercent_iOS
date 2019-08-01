@@ -28,6 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         EPManager.shared.registerBot(uuid: Bots.starwars.uuid,
                                      fetchingStrategy: .offline(fileName : Bots.starwars.jsonFile))
+        
+        EPManager.shared.registerBot(uuid: Bots.customController.uuid,
+                                     fetchingStrategy: .offline(fileName : Bots.customController.jsonFile))
 
         
         return true

@@ -11,7 +11,7 @@ import EightySixPercent
 
 class ViewController: UITableViewController {
 
-    var content = [Bots.simple, Bots.starwars]
+    var content = [Bots.simple, Bots.starwars, Bots.customController]
 
     func openBot(uuid : String ,with appearance : EPAppearance) {
         
@@ -73,9 +73,15 @@ extension ViewController : EPChatMessageViewControllerDelegate {
     }
     
     func epChatMessageViewControllerCustomInputType(controller: EPChatMessageViewController, customInputTypeId: String) -> EPCustomInputType? {
+        
         //used to provide a custom Input type
-        log(message: nil)
-        return nil
+        print("Will display custom controller for id: \(customInputTypeId)")
+        
+        if ( customInputTypeId == "CUSTOM_CONTROLLER") {
+            return CustomExample()
+        } else {
+            return nil
+        }
     }
     
     func epChatMessageViewControllerBotDidFinish(controller: EPChatMessageViewController, context: [EPContextObject]) {
