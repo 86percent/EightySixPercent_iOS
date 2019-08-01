@@ -73,14 +73,15 @@ extension ViewController : EPChatMessageViewControllerDelegate {
     }
     
     func epChatMessageViewControllerCustomInputType(controller: EPChatMessageViewController, customInputTypeId: String) -> EPCustomInputType? {
+        
         //used to provide a custom Input type
         print("Will display custom controller for id: \(customInputTypeId)")
         
         if ( customInputTypeId == "CUSTOM_CONTROLLER") {
             return CustomExample()
+        } else {
+            return nil
         }
-        
-        return nil
     }
     
     func epChatMessageViewControllerBotDidFinish(controller: EPChatMessageViewController, context: [EPContextObject]) {
